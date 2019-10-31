@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'poiret_oneregular';
+    src: url('../font/poiretone-regular-webfont.woff2') format('woff2'),
+         url('../font/poiretone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #f4f3f4;
+}
+
+.wrapper {
+    width: 25rem;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    .title {
+        color: #e9d6d7;
+        font-family: 'poiret_oneregular';
+        font-size: 5rem;
+        flex-basis: 100%;
+        text-align: center;
+    }
+    
+    .error {
+        color: #ed474f;
+        font-family: 'poiret_oneregular';
+        text-align: center;
+        flex-basis: 100%;
+        visibility: hidden;
+    }
+
+    .show {
+        visibility: visible;
+    }
+
+    .input-email {
+        flex-basis: 100%;
+        height: 3rem;
+        border: 0.1rem solid #d9d9d9;
+        box-shadow: 0 -0.2rem 0.5rem #d9d9d9;
+        padding-left: 0.6rem;
+        font-size: 1rem;
+        font-family: 'poiret_oneregular';
+    }
+
+    .input-email:focus {
+        outline: none;
+    }
+    
+    .input-email::placeholder {
+        color: #d9d9d9;
+        font-style: italic;
+        font-size: 1.2rem;
+        font-family: 'poiret_oneregular';
+    }
+    
+    .email-item {
+        font-family: 'poiret_oneregular';
+        font-size: 1.2rem;
+        height: 2.5rem;
+        background-color: #ffffff;
+        border: 0.1rem solid #d9d9d9;
+        flex-basis: 100%;
+        padding-left: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .email-item__text {
+        margin: 0;
+    }
+    
+    .img-cross {
+        margin-right: 0.2rem;
+    }
+
+    .red-text {
+        color: #ed474f;
+    }
+    
+    .list{
+        display: flex;
+        flex-basis: 100%;
+        box-shadow: 0 0.2rem 0.5rem #d9d9d9;
+        flex-wrap: wrap;
+    }
+
+}
